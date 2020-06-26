@@ -74,10 +74,7 @@ def get_predict(input):
         input
               ]])
     result = model.predict(pr)
-    if (result[0][1] < 0.3997):
-        return 1
-    else:
-        return 0
+    return result
 
 
 import asyncio
